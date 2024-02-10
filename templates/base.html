@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Wild Mushrooms{% endblock %}</title>
+</head>
+<body>
+    {% block header %}
+        <header>
+            Welcome to our online store. <br>
+            Let's start shopping.
+        </header>
+    {% endblock %}
+
+    {% block menu %}
+        <nav class="menu">
+            <ul>
+                <li><a href="{{ url_for('clothes') }}">Clothes</a></li>
+                <li><a href="{{ url_for('shoes') }}">Shoes</a></li>
+                <li><a href="{{ url_for('jacket') }}">Jacket</a></li>
+            </ul>
+        </nav>
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% block footer %}
+        <footer>
+            <br>
+            Don't hesitate to contact us. But only if you buy something.
+        </footer>
+    {% endblock %}
+</body>
+</html>
